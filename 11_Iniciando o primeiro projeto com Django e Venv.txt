@@ -1,0 +1,8 @@
+NO CMD...
+python -m pip install pip setuptools wheel --upgrade   --  (instalar e/ou atualizar)
+
+python -m venv venv   --   (cria um ambiente virtual chamado venv)
+
+venv/Scripts/activate    --   (Ativa o ambiente virtual venv)
+
+pip install django   --   (dentro do ambiente virtual)

@@ -1,0 +1,74 @@
+Criar um novo repositório no GitHub
+nomear repositório 
+    É recomendado deixar o repositório público
+create repository
+
+1... Configurar o GitHub 
+
+- Abrir o terminal na pasta do projeto com o ambiente virtual ativo
+    comandos:
+
+    git config --global user.name "NOME DE USUÁRIO PARA O GITHUB"
+
+    git config --global user.email "EMAIL PARA GITHUB"
+
+    git config --global init.defaltBranch main
+
+    git init (Inicia o projeto) 
+
+
+2... Criar chaves SSH
+
+- Ainda no terminal
+
+    comandos:
+
+    ssh-heygen (Gera um par de chaves SSH numa pasta .ssh)
+
+    * Abra o arquivo .ssh/id_rsa.pub e copie a chaves
+
+
+3... Adicionar chave SSH no GitHub
+
+- Abra o GitHub e vá em seu perfil
+- Abra settings em uma nova aba 
+- Vá em SSH and GPG keys
+- New SSH keys
+- Cole a chave SSH depois vá em 'Add SSH key'
+
+
+4... Criar o repositório
+
+- Voltar para a aba pricipal
+- Marcar SSH e copiar o link
+- Abrir terminal na pasta do projeto e com ambiente virtual ativo
+    
+    comandos:
+
+    git remote add origin LINK QUE VOCÊ COPIOU
+
+    git remote -v (mostra o repositório)
+    * fetch (baixar dados)
+    * push (enviar dados)
+
+----------------------------------------------------------------------------------------------------------------
+
+No Visual Studio Code:
+
+arquivo .gitignore serve para não enviar coias para o repositório
+
+Pode fazer commit e enviar arquivos para o GitHub pelo Source Control 
+
+
+
+No Terminal:
+
+    comandos:
+
+    git status (Mostra o status do repositório)
+
+    git add ARQUIVO (adiciona um arquivo para fazer commit)
+
+    git commit -m 'MENSAGEM' (faz commit dos arquivos enviados)
+
+    git push (envia os aquivos para o GitHub)
