@@ -129,5 +129,5 @@ db.sqlite3
 db copy.sqlite3
 static/
 
-
+gitignore.txt
 Iniciando o primeiro projeto com django e venv.txt
